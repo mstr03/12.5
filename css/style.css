@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+body header, body .trigger {
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
+  -moz-box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
+  box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
+}
+
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -8,12 +14,11 @@ body {
 body header {
   background-color: #80CBC4;
   width: 100%;
-  -webkit-box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
-  -moz-box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
-  box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
   position: absolute;
   left: 0;
   top: 0;
+  font-size: 20px;
+  color: #fff;
 }
 
 body .box {
@@ -35,26 +40,16 @@ body .trigger {
   height: 50px;
   width: 200px;
   font-size: 20px;
-  -webkit-box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
-  -moz-box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
-  box-shadow: 0px 10px 15px -5px rgba(204, 204, 204, 0.69);
 }
 
 body .trigger:hover {
   background-color: rgba(128, 203, 195, 0.705);
   cursor: pointer;
-}
-
-body .trigger:focus {
-  background-color: rgba(128, 203, 195, 0.705);
-  cursor: pointer;
-  -webkit-box-shadow: 0px 15px 15px -5px rgba(204, 204, 204, 0.69);
-  -moz-box-shadow: 0px 15px 15px -5px rgba(204, 204, 204, 0.69);
-  box-shadow: 0px 15px 15px -5px rgba(204, 204, 204, 0.69);
   outline: 0;
 }
 
 body .tweet {
   text-decoration: none;
   color: #55ACEE;
+  font-size: 20px;
 }

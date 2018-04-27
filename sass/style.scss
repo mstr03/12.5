@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+$white-color: #fff;
+$bigger-font: 20px;
+$header-color: #80CBC4;
+$body-color: #E0F2F1;
+%main-shadow {
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
+    box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
+}
 
 body {
     font-family: 'Lato', sans-serif;
     text-align: center;
-    background-color: #E0F2F1;
+    background-color: $body-color;
 
     header {
-        background-color: #80CBC4;
+        background-color: $header-color;
         width: 100%;
-        -webkit-box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
-        -moz-box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
-        box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
         position: absolute;
         left: 0;
         top: 0;
+        font-size: $bigger-font;
+        color: $white-color;
+        @extend %main-shadow;
     }
 
     .box {
@@ -30,24 +39,15 @@ body {
         margin-right: 20px;
         border: none;
         border-radius: 3px;
-        background-color: #80CBC4;
-        color: #fff;
+        background-color: $header-color;
+        color: $white-color;
         height: 50px;
         width: 200px;
-        font-size: 20px;
-        -webkit-box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
-        -moz-box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
-        box-shadow: 0px 10px 15px -5px rgba(204,204,204,0.69);
+        font-size: $bigger-font;
+        @extend %main-shadow;
         &:hover {
             background-color: rgba(128, 203, 195, 0.705);
             cursor: pointer;
-        }
-        &:focus {
-            background-color: rgba(128, 203, 195, 0.705);
-            cursor: pointer;
-            -webkit-box-shadow: 0px 15px 15px -5px rgba(204,204,204,0.69);
-            -moz-box-shadow: 0px 15px 15px -5px rgba(204,204,204,0.69);
-            box-shadow: 0px 15px 15px -5px rgba(204,204,204,0.69);
             outline: 0;
         }
     }
@@ -55,5 +55,6 @@ body {
     .tweet {
         text-decoration: none;
         color: #55ACEE;
+        font-size: $bigger-font;
     }
 }
